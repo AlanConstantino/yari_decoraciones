@@ -31,10 +31,6 @@
 
   <!-- ======================== HERO ======================== -->
   <section class="hero" id="home">
-    <div class="hero-bg">
-      <img src="images/hero.webp" alt="Yari Decorations - Elegant blue and white balloon event setup" class="hero-bg-img">
-    </div>
-    <div class="hero-overlay"></div>
     <!-- Decorative CSS elements -->
     <div class="hero-decor">
       <div class="confetti confetti-1"></div>
@@ -47,14 +43,23 @@
       <div class="sparkle sparkle-2"></div>
       <div class="sparkle sparkle-3"></div>
     </div>
-    <div class="hero-content animate-on-scroll">
-      <p class="hero-tagline">Welcome to</p>
-      <h1 class="hero-title">Yari Decorations</h1>
-      <h2 class="hero-headline">Beautiful Event Decorations Made Easy</h2>
-      <p class="hero-sub">We handle everything from balloon arrangements and custom backdrops to jumpers, tables, chairs, stands, centerpieces, and full event setup&mdash;so you can focus on celebrating.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Contact Us</a>
-        <a href="#services" class="btn btn-secondary">View Services</a>
+    <div class="hero-split">
+      <div class="hero-content animate-on-scroll">
+        <div class="hero-heading">
+          <p class="hero-tagline">Welcome to</p>
+          <h1 class="hero-title">Yari Decorations</h1>
+          <h2 class="hero-headline">Beautiful Event Decorations Made Easy</h2>
+        </div>
+        <div class="hero-desc">
+          <p class="hero-sub">We handle everything from balloon arrangements and custom backdrops to jumpers, tables, chairs, stands, centerpieces, and full event setup&mdash;so you can focus on celebrating.</p>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Contact Us</a>
+          <a href="#services" class="btn btn-secondary">View Services</a>
+        </div>
+      </div>
+      <div class="hero-image animate-on-scroll">
+        <img src="images/full_event.webp" alt="Yari Decorations - Elegant full event setup with pink and white tent, chandeliers, and decorated tables" class="hero-img">
       </div>
     </div>
   </section>
@@ -215,92 +220,64 @@
       <p class="section-tagline animate-on-scroll">Our Work</p>
       <h2 class="section-title animate-on-scroll">Gallery</h2>
       <p class="section-subtitle animate-on-scroll">A glimpse of the beautiful events we've helped create.</p>
-      <div class="gallery-grid">
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/hero.webp" alt="Elegant blue and white balloon setup with hot air balloon theme for first birthday" class="gallery-img" loading="lazy">
+      <div class="carousel animate-on-scroll" id="galleryCarousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="images/hero.webp" alt="Elegant blue and white balloon setup" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Balloon Setup</div>
           </div>
-          <div class="gallery-label">Balloon Setup</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8099.webp" alt="Mickey Mouse themed kids birthday party with balloon decor and stands" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8099.webp" alt="Mickey Mouse themed kids birthday party" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Kids Birthday</div>
           </div>
-          <div class="gallery-label">Kids Birthday</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8108.webp" alt="Jurassic World themed bounce house jumper" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8108.webp" alt="Jurassic World themed bounce house jumper" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Jumper Rental</div>
           </div>
-          <div class="gallery-label">Jumper Rental</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/backdrop.webp" alt="Teddy bear themed balloon backdrop with blue and white decor" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/backdrop.webp" alt="Teddy bear themed balloon backdrop" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Teddy Bear Backdrop</div>
           </div>
-          <div class="gallery-label">Teddy Bear Backdrop</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8101.webp" alt="Princess Cinderella themed birthday with pink and blue balloon garland" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8101.webp" alt="Princess Cinderella themed birthday" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Princess Birthday</div>
           </div>
-          <div class="gallery-label">Princess Birthday</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8105.webp" alt="Baby shower full event setup with draped tent and Winnie the Pooh theme" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8105.webp" alt="Baby shower full event setup" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Baby Shower Setup</div>
           </div>
-          <div class="gallery-label">Baby Shower Setup</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/party_stand.webp" alt="50th birthday setup with elegant party stands and balloon garland" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/party_stand.webp" alt="50th birthday elegant setup" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Elegant Birthday</div>
           </div>
-          <div class="gallery-label">Elegant Birthday</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8112.webp" alt="Outdoor tent event with white tables and chairs setup" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8112.webp" alt="Outdoor tent event setup" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Outdoor Event</div>
           </div>
-          <div class="gallery-label">Outdoor Event</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8110.webp" alt="Farm themed birthday party with barn backdrop and animal decorations" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8110.webp" alt="Farm themed birthday party" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Farm Theme Party</div>
           </div>
-          <div class="gallery-label">Farm Theme Party</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8107.webp" alt="Elegant venue with chandeliers, table decor, and Winnie the Pooh theme" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8107.webp" alt="Elegant venue with chandeliers" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Venue Decor</div>
           </div>
-          <div class="gallery-label">Venue Decor</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/centerpiece.webp" alt="Burgundy table with floral centerpieces and cheesecloth runner" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/centerpiece.webp" alt="Floral table centerpieces" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Table Centerpieces</div>
           </div>
-          <div class="gallery-label">Table Centerpieces</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/full_event.webp" alt="Pink and white tent setup with elegant table settings and chandeliers" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/full_event.webp" alt="Pink and white tent full event setup" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Full Event Setup</div>
           </div>
-          <div class="gallery-label">Full Event Setup</div>
         </div>
-
+        <button class="carousel-btn carousel-prev" aria-label="Previous">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel-btn carousel-next" aria-label="Next">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
       </div>
     </div>
   </section>
@@ -312,36 +289,43 @@
       <h2 class="section-title animate-on-scroll">Contact Us</h2>
       <p class="section-subtitle animate-on-scroll">Ready to make your event unforgettable? Reach out to us and let's start planning!</p>
 
-      <div class="contact-layout">
-        <div class="contact-photo animate-on-scroll">
+      <div class="contact-layout animate-on-scroll">
+        <div class="contact-photo">
           <img src="images/main.webp" alt="Yari - Owner of Yari Decorations" class="contact-portrait" loading="lazy">
         </div>
-        <div class="contact-details animate-on-scroll">
+        <div class="contact-details">
           <div class="contact-cards">
             <a href="tel:5103292155" class="contact-card">
-              <span class="contact-card-icon">📞</span>
+              <span class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785c-1.826 0-3.616-.491-5.18-1.42l-.372-.22-3.858.963.981-3.587-.242-.384A9.685 9.685 0 012.27 12.05c0-5.407 4.372-9.806 9.778-9.806 2.613 0 5.066 1.025 6.908 2.884a9.742 9.742 0 012.862 6.922c-.003 5.404-4.376 9.735-9.768 9.735zm8.413-18.108A11.71 11.71 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.224z"/></svg></span>
               <h3>Phone / WhatsApp</h3>
               <p>510-329-2155</p>
             </a>
             <a href="https://www.instagram.com/Yary_decoraciones09/" target="_blank" rel="noopener noreferrer" class="contact-card">
-              <span class="contact-card-icon">📸</span>
+              <span class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></span>
               <h3>Instagram</h3>
               <p>@Yary_decoraciones09</p>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61584957218803" target="_blank" rel="noopener noreferrer" class="contact-card">
-              <span class="contact-card-icon">📘</span>
+              <span class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
               <h3>Facebook</h3>
               <p>Yari Decorations</p>
             </a>
             <a href="mailto:yarithzagaldamez2294@gmail.com" class="contact-card">
-              <span class="contact-card-icon">📧</span>
+              <span class="contact-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg></span>
               <h3>Email</h3>
               <p>yarithzagaldamez2294@gmail.com</p>
             </a>
-            <div class="contact-card">
-              <span class="contact-card-icon">📍</span>
-              <h3>Service Area</h3>
-              <p>Hayward &amp; surrounding areas</p>
+          </div>
+          <div class="map-wrapper">
+            <div class="map-header">
+              <svg class="map-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <h3>Service Area</h3>
+                <p>Hayward &amp; surrounding areas</p>
+              </div>
+            </div>
+            <div class="map-container">
+              <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-122.1500%2C37.6100%2C-122.0000%2C37.6900&amp;layer=mapnik&amp;marker=37.6688%2C-122.0808" title="Map of Hayward, California" loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -365,11 +349,11 @@
           <a href="#contact">Contact</a>
         </div>
         <div class="footer-contact">
-          <p><a href="tel:5103292155">📞 510-329-2155</a></p>
-          <p><a href="https://www.instagram.com/Yary_decoraciones09/" target="_blank" rel="noopener noreferrer">📸 @Yary_decoraciones09</a></p>
-          <p><a href="https://www.facebook.com/profile.php?id=61584957218803" target="_blank" rel="noopener noreferrer">📘 Facebook</a></p>
-          <p><a href="mailto:yarithzagaldamez2294@gmail.com">📧 yarithzagaldamez2294@gmail.com</a></p>
-          <p>📍 Hayward &amp; surrounding areas</p>
+          <p><a href="tel:5103292155"><svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785c-1.826 0-3.616-.491-5.18-1.42l-.372-.22-3.858.963.981-3.587-.242-.384A9.685 9.685 0 012.27 12.05c0-5.407 4.372-9.806 9.778-9.806 2.613 0 5.066 1.025 6.908 2.884a9.742 9.742 0 012.862 6.922c-.003 5.404-4.376 9.735-9.768 9.735zm8.413-18.108A11.71 11.71 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.224z"/></svg> 510-329-2155</a></p>
+          <p><a href="https://www.instagram.com/Yary_decoraciones09/" target="_blank" rel="noopener noreferrer"><svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> @Yary_decoraciones09</a></p>
+          <p><a href="https://www.facebook.com/profile.php?id=61584957218803" target="_blank" rel="noopener noreferrer"><svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+          <p><a href="mailto:yarithzagaldamez2294@gmail.com"><svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg> yarithzagaldamez2294@gmail.com</a></p>
+          <p><svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Hayward &amp; surrounding areas</p>
         </div>
       </div>
       <div class="footer-bottom">

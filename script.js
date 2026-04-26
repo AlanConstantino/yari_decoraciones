@@ -77,6 +77,87 @@
     });
   });
 
+  /* ---------- Gallery carousel ---------- */
+  var carousel = document.getElementById("galleryCarousel");
+  if (carousel) {
+    var track = carousel.querySelector(".carousel-track");
+    var slides = carousel.querySelectorAll(".carousel-slide");
+    var prevBtn = carousel.querySelector(".carousel-prev");
+    var nextBtn = carousel.querySelector(".carousel-next");
+    var dotsContainer = carousel.querySelector(".carousel-dots");
+    var currentSlide = 0;
+    var totalSlides = slides.length;
+    var autoplayTimer;
+
+    // Build dots
+    for (var i = 0; i < totalSlides; i++) {
+      var dot = document.createElement("button");
+      dot.className = "carousel-dot" + (i === 0 ? " active" : "");
+      dot.setAttribute("aria-label", "Slide " + (i + 1));
+      dot.dataset.index = i;
+      dotsContainer.appendChild(dot);
+    }
+    var dots = dotsContainer.querySelectorAll(".carousel-dot");
+
+    function goToSlide(index) {
+      if (index < 0) index = totalSlides - 1;
+      if (index >= totalSlides) index = 0;
+      currentSlide = index;
+      track.style.transform = "translateX(-" + currentSlide * 100 + "%)";
+      dots.forEach(function (d) { d.classList.remove("active"); });
+      dots[currentSlide].classList.add("active");
+    }
+
+    prevBtn.addEventListener("click", function () {
+      goToSlide(currentSlide - 1);
+      resetAutoplay();
+    });
+
+    nextBtn.addEventListener("click", function () {
+      goToSlide(currentSlide + 1);
+      resetAutoplay();
+    });
+
+    dotsContainer.addEventListener("click", function (e) {
+      if (e.target.classList.contains("carousel-dot")) {
+        goToSlide(parseInt(e.target.dataset.index));
+        resetAutoplay();
+      }
+    });
+
+    // Touch/swipe support
+    var touchStartX = 0;
+
+    carousel.addEventListener("touchstart", function (e) {
+      touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+
+    carousel.addEventListener("touchend", function (e) {
+      var diff = touchStartX - e.changedTouches[0].clientX;
+      if (diff > 40) {
+        goToSlide(currentSlide + 1);
+        resetAutoplay();
+      } else if (diff < -40) {
+        goToSlide(currentSlide - 1);
+        resetAutoplay();
+      }
+    });
+
+    // Autoplay
+    function startAutoplay() {
+      autoplayTimer = setInterval(function () {
+        goToSlide(currentSlide + 1);
+      }, 5000);
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplayTimer);
+      startAutoplay();
+    }
+
+    startAutoplay();
+  }
+
   /* ---------- Scroll animations with IntersectionObserver ---------- */
   var animatedElements = document.querySelectorAll(".animate-on-scroll");
 

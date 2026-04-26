@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Yari Decorations - Hermosas decoraciones para eventos, renta de mobiliario, globos, brincolines, mesas, sillas y montaje completo de eventos.">
-  <title>Yari Decorations | Decoraciones de Eventos Hermosas y F&aacute;ciles</title>
+  <meta name="description" content="Yari Decoraciones - Hermosas decoraciones para eventos, renta de mobiliario, globos, brincolines, mesas, sillas y montaje completo de eventos.">
+  <title>Yari Decoraciones | Decoraciones de Eventos Hermosas y F&aacute;ciles</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <!-- ======================== NAVBAR ======================== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
-      <a href="#home" class="nav-logo">Yari <span>Decorations</span></a>
+      <a href="#home" class="nav-logo">Yari <span>Decoraciones</span></a>
       <button class="hamburger" id="hamburger" aria-label="Abrir men&uacute; de navegaci&oacute;n">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -32,10 +32,6 @@
 
   <!-- ======================== HERO ======================== -->
   <section class="hero" id="home">
-    <div class="hero-bg">
-      <img src="images/hero.webp" alt="Yari Decorations - Elegante montaje de evento con globos azules y blancos" class="hero-bg-img">
-    </div>
-    <div class="hero-overlay"></div>
     <!-- Decorative CSS elements -->
     <div class="hero-decor">
       <div class="confetti confetti-1"></div>
@@ -48,14 +44,23 @@
       <div class="sparkle sparkle-2"></div>
       <div class="sparkle sparkle-3"></div>
     </div>
-    <div class="hero-content animate-on-scroll">
-      <p class="hero-tagline">Bienvenidos a</p>
-      <h1 class="hero-title">Yari Decorations</h1>
-      <h2 class="hero-headline">Decoraciones de Eventos Hermosas y F&aacute;ciles</h2>
-      <p class="hero-sub">Nos encargamos de todo: arreglos de globos, backdrops personalizados, brincolines, mesas, sillas, stands, centros de mesa y montaje completo&mdash;para que t&uacute; solo disfrutes la celebraci&oacute;n.</p>
-      <div class="hero-buttons">
-        <a href="#contact" class="btn btn-primary">Cont&aacute;ctanos</a>
-        <a href="#services" class="btn btn-secondary">Ver Servicios</a>
+    <div class="hero-split">
+      <div class="hero-content animate-on-scroll">
+        <div class="hero-heading">
+          <p class="hero-tagline">Bienvenidos a</p>
+          <h1 class="hero-title">Yari Decoraciones</h1>
+          <h2 class="hero-headline">Decoraciones de Eventos Hermosas y F&aacute;ciles</h2>
+        </div>
+        <div class="hero-desc">
+          <p class="hero-sub">Nos encargamos de todo: arreglos de globos, backdrops personalizados, brincolines, mesas, sillas, stands, centros de mesa y montaje completo&mdash;para que t&uacute; solo disfrutes la celebraci&oacute;n.</p>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Cont&aacute;ctanos</a>
+          <a href="#services" class="btn btn-secondary">Ver Servicios</a>
+        </div>
+      </div>
+      <div class="hero-image animate-on-scroll">
+        <img src="images/full_event.webp" alt="Yari Decoraciones - Elegante montaje completo con carpa rosa y blanca, candelabros y mesas decoradas" class="hero-img">
       </div>
     </div>
   </section>
@@ -166,7 +171,7 @@
       <div class="about-layout">
         <div class="about-visual animate-on-scroll">
           <div class="about-shape">
-            <img src="images/full_event.webp" alt="Elegante montaje de evento rosa y blanco con mesas, sillas y candelabros por Yari Decorations" class="about-img">
+            <img src="images/full_event.webp" alt="Elegante montaje de evento rosa y blanco con mesas, sillas y candelabros por Yari Decoraciones" class="about-img">
           </div>
           <div class="about-stats">
             <div class="stat">
@@ -181,8 +186,8 @@
         </div>
         <div class="about-text animate-on-scroll">
           <p class="section-tagline">Qui&eacute;nes Somos</p>
-          <h2 class="section-title">Sobre Yari Decorations</h2>
-          <p>En Yari Decorations, creemos que toda celebraci&oacute;n merece ser hermosa. Somos un negocio dedicado a la decoraci&oacute;n de eventos y renta de mobiliario que ayuda a hacer realidad tus eventos so&ntilde;ados con decoraciones impresionantes y un montaje confiable y sin estr&eacute;s.</p>
+          <h2 class="section-title">Sobre Yari Decoraciones</h2>
+          <p>En Yari Decoraciones, creemos que toda celebraci&oacute;n merece ser hermosa. Somos un negocio dedicado a la decoraci&oacute;n de eventos y renta de mobiliario que ayuda a hacer realidad tus eventos so&ntilde;ados con decoraciones impresionantes y un montaje confiable y sin estr&eacute;s.</p>
           <p>Ya sea una fiesta de cumplea&ntilde;os, baby shower, recepci&oacute;n de boda, ceremonia de graduaci&oacute;n, evento corporativo, bautizo o una reuni&oacute;n familiar&mdash;traemos creatividad, atenci&oacute;n al detalle y una pasi&oacute;n genuina por hacer tus momentos especiales inolvidables.</p>
           <p>Desde el primer globo hasta el &uacute;ltimo centro de mesa, nos encargamos de cada detalle para que t&uacute; te concentres en lo m&aacute;s importante: celebrar con las personas que amas.</p>
           <a href="#contact" class="btn btn-primary">Planifiquemos Tu Evento</a>
@@ -216,92 +221,64 @@
       <p class="section-tagline animate-on-scroll">Nuestro Trabajo</p>
       <h2 class="section-title animate-on-scroll">Galer&iacute;a</h2>
       <p class="section-subtitle animate-on-scroll">Un vistazo a los hermosos eventos que hemos ayudado a crear.</p>
-      <div class="gallery-grid">
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/hero.webp" alt="Elegante montaje de globos azules y blancos con tema de globo aerost&aacute;tico" class="gallery-img" loading="lazy">
+      <div class="carousel animate-on-scroll" id="galleryCarousel">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img src="images/hero.webp" alt="Elegante montaje de globos azules y blancos" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Montaje de Globos</div>
           </div>
-          <div class="gallery-label">Montaje de Globos</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8099.webp" alt="Fiesta infantil tem&aacute;tica de Mickey Mouse con decoraci&oacute;n de globos" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8099.webp" alt="Fiesta infantil tem&aacute;tica de Mickey Mouse" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Cumplea&ntilde;os Infantil</div>
           </div>
-          <div class="gallery-label">Cumplea&ntilde;os Infantil</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8108.webp" alt="Brincol&iacute;n tem&aacute;tico de Jurassic World" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8108.webp" alt="Brincol&iacute;n tem&aacute;tico de Jurassic World" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Renta de Brincol&iacute;n</div>
           </div>
-          <div class="gallery-label">Renta de Brincol&iacute;n</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/backdrop.webp" alt="Backdrop tem&aacute;tico de oso de peluche con decoraci&oacute;n azul y blanca" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/backdrop.webp" alt="Backdrop tem&aacute;tico de oso de peluche" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Backdrop de Osito</div>
           </div>
-          <div class="gallery-label">Backdrop de Osito</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8101.webp" alt="Cumplea&ntilde;os tem&aacute;tico de Cenicienta con guirnalda de globos rosas y azules" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8101.webp" alt="Cumplea&ntilde;os tem&aacute;tico de Cenicienta" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Cumplea&ntilde;os de Princesa</div>
           </div>
-          <div class="gallery-label">Cumplea&ntilde;os de Princesa</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8105.webp" alt="Montaje completo de baby shower con carpa y tema de Winnie the Pooh" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8105.webp" alt="Montaje completo de baby shower" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Montaje de Baby Shower</div>
           </div>
-          <div class="gallery-label">Montaje de Baby Shower</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/party_stand.webp" alt="Montaje de cumplea&ntilde;os 50 con elegantes stands y guirnalda de globos" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/party_stand.webp" alt="Montaje de cumplea&ntilde;os 50 elegante" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Cumplea&ntilde;os Elegante</div>
           </div>
-          <div class="gallery-label">Cumplea&ntilde;os Elegante</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8112.webp" alt="Evento al aire libre con carpa, mesas y sillas blancas" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8112.webp" alt="Evento al aire libre con carpa" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Evento al Aire Libre</div>
           </div>
-          <div class="gallery-label">Evento al Aire Libre</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8110.webp" alt="Fiesta de cumplea&ntilde;os con tema de granja y decoraciones de animales" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8110.webp" alt="Fiesta con tema de granja" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Fiesta de la Granja</div>
           </div>
-          <div class="gallery-label">Fiesta de la Granja</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/IMG_8107.webp" alt="Sal&oacute;n elegante con candelabros y decoraci&oacute;n de mesas" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/IMG_8107.webp" alt="Sal&oacute;n elegante con candelabros" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Decoraci&oacute;n de Sal&oacute;n</div>
           </div>
-          <div class="gallery-label">Decoraci&oacute;n de Sal&oacute;n</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/centerpiece.webp" alt="Mesa burdeos con centros de mesa florales y camino de tela" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/centerpiece.webp" alt="Centros de mesa florales" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Centros de Mesa</div>
           </div>
-          <div class="gallery-label">Centros de Mesa</div>
-        </div>
-
-        <div class="gallery-card animate-on-scroll">
-          <div class="gallery-img-wrap">
-            <img src="images/full_event.webp" alt="Montaje de carpa rosa y blanca con mesas elegantes y candelabros" class="gallery-img" loading="lazy">
+          <div class="carousel-slide">
+            <img src="images/full_event.webp" alt="Montaje completo rosa y blanco" class="carousel-img" loading="lazy">
+            <div class="carousel-label">Montaje Completo</div>
           </div>
-          <div class="gallery-label">Montaje Completo</div>
         </div>
-
+        <button class="carousel-btn carousel-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel-btn carousel-next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+        <div class="carousel-dots" id="carouselDots"></div>
       </div>
     </div>
   </section>
@@ -313,36 +290,43 @@
       <h2 class="section-title animate-on-scroll">Cont&aacute;ctanos</h2>
       <p class="section-subtitle animate-on-scroll">&iquest;Lista para hacer tu evento inolvidable? &iexcl;Escr&iacute;benos y comencemos a planificar!</p>
 
-      <div class="contact-layout">
-        <div class="contact-photo animate-on-scroll">
-          <img src="images/main.webp" alt="Yari - Due&ntilde;a de Yari Decorations" class="contact-portrait" loading="lazy">
+      <div class="contact-layout animate-on-scroll">
+        <div class="contact-photo">
+          <img src="images/main.webp" alt="Yari - Due&ntilde;a de Yari Decoraciones" class="contact-portrait" loading="lazy">
         </div>
-        <div class="contact-details animate-on-scroll">
+        <div class="contact-details">
           <div class="contact-cards">
             <a href="tel:5103292155" class="contact-card">
-              <span class="contact-card-icon">📞</span>
+              <span class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785c-1.826 0-3.616-.491-5.18-1.42l-.372-.22-3.858.963.981-3.587-.242-.384A9.685 9.685 0 012.27 12.05c0-5.407 4.372-9.806 9.778-9.806 2.613 0 5.066 1.025 6.908 2.884a9.742 9.742 0 012.862 6.922c-.003 5.404-4.376 9.735-9.768 9.735zm8.413-18.108A11.71 11.71 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.224z"/></svg></span>
               <h3>Tel&eacute;fono / WhatsApp</h3>
               <p>510-329-2155</p>
             </a>
             <a href="https://www.instagram.com/Yary_decoraciones09/" target="_blank" rel="noopener noreferrer" class="contact-card">
-              <span class="contact-card-icon">📸</span>
+              <span class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></span>
               <h3>Instagram</h3>
               <p>@Yary_decoraciones09</p>
             </a>
             <a href="https://www.facebook.com/profile.php?id=61584957218803" target="_blank" rel="noopener noreferrer" class="contact-card">
-              <span class="contact-card-icon">📘</span>
+              <span class="contact-card-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></span>
               <h3>Facebook</h3>
-              <p>Yari Decorations</p>
+              <p>Yari Decoraciones</p>
             </a>
             <a href="mailto:yarithzagaldamez2294@gmail.com" class="contact-card">
-              <span class="contact-card-icon">📧</span>
+              <span class="contact-card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg></span>
               <h3>Correo</h3>
               <p>yarithzagaldamez2294@gmail.com</p>
             </a>
-            <div class="contact-card">
-              <span class="contact-card-icon">📍</span>
-              <h3>&Aacute;rea de Servicio</h3>
-              <p>Hayward y alrededores</p>
+          </div>
+          <div class="map-wrapper">
+            <div class="map-header">
+              <svg class="map-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <h3>&Aacute;rea de Servicio</h3>
+                <p>Hayward y alrededores</p>
+              </div>
+            </div>
+            <div class="map-container">
+              <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-122.1500%2C37.6100%2C-122.0000%2C37.6900&amp;layer=mapnik&amp;marker=37.6688%2C-122.0808" title="Mapa de Hayward, California" loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -355,7 +339,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-brand">
-          <h3 class="footer-logo">Yari <span>Decorations</span></h3>
+          <h3 class="footer-logo">Yari <span>Decoraciones</span></h3>
           <p>Decoraciones, renta de mobiliario y montaje de eventos</p>
         </div>
         <div class="footer-links">
@@ -366,15 +350,15 @@
           <a href="#contact">Contacto</a>
         </div>
         <div class="footer-contact">
-          <p><a href="tel:5103292155">📞 510-329-2155</a></p>
-          <p><a href="https://www.instagram.com/Yary_decoraciones09/" target="_blank" rel="noopener noreferrer">📸 @Yary_decoraciones09</a></p>
-          <p><a href="https://www.facebook.com/profile.php?id=61584957218803" target="_blank" rel="noopener noreferrer">📘 Facebook</a></p>
-          <p><a href="mailto:yarithzagaldamez2294@gmail.com">📧 yarithzagaldamez2294@gmail.com</a></p>
-          <p>📍 Hayward y alrededores</p>
+          <p><a href="tel:5103292155"><svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.05 21.785c-1.826 0-3.616-.491-5.18-1.42l-.372-.22-3.858.963.981-3.587-.242-.384A9.685 9.685 0 012.27 12.05c0-5.407 4.372-9.806 9.778-9.806 2.613 0 5.066 1.025 6.908 2.884a9.742 9.742 0 012.862 6.922c-.003 5.404-4.376 9.735-9.768 9.735zm8.413-18.108A11.71 11.71 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.224z"/></svg> 510-329-2155</a></p>
+          <p><a href="https://www.instagram.com/Yary_decoraciones09/" target="_blank" rel="noopener noreferrer"><svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> @Yary_decoraciones09</a></p>
+          <p><a href="https://www.facebook.com/profile.php?id=61584957218803" target="_blank" rel="noopener noreferrer"><svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg> Facebook</a></p>
+          <p><a href="mailto:yarithzagaldamez2294@gmail.com"><svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4l-10 8L2 4"/></svg> yarithzagaldamez2294@gmail.com</a></p>
+          <p><svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> Hayward y alrededores</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span id="copyrightYear"></span> Yari Decorations. Todos los derechos reservados.</p>
+        <p>&copy; <span id="copyrightYear"></span> Yari Decoraciones. Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>

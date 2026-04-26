@@ -709,26 +709,30 @@ ul {
 }
 
 .events-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
   margin-top: 36px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .event-chip {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  padding: 12px 22px;
+  padding: 16px 12px;
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: var(--radius-xl);
-  font-size: 0.88rem;
+  border-radius: var(--radius-lg);
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--text-dark);
   transition: var(--transition);
   cursor: default;
+  text-align: center;
 }
 
 .event-chip:hover {
@@ -739,7 +743,7 @@ ul {
 }
 
 .event-emoji {
-  font-size: 1.15rem;
+  font-size: 1.3rem;
 }
 
 /* ============================================================
